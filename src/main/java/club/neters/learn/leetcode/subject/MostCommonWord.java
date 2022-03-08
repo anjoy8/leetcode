@@ -1,4 +1,4 @@
-package club.neters.learn.leetcode.common;
+package club.neters.learn.leetcode.subject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
