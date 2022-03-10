@@ -5,6 +5,9 @@ import club.neters.learn.leetcode.common.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 一维数组转换为二叉树代码
+ */
 public class TreeNodeUtil {
     public static TreeNode arrayToTreeNode(Integer[] array) {
         if (array.length == 0) {
