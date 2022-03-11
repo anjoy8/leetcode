@@ -1,5 +1,6 @@
 package club.neters.learn.leetcode.controller;
 
+import club.neters.learn.leetcode.subject.CountHighestScoreNodes;
 import club.neters.learn.leetcode.subject.LevelOrder;
 import club.neters.learn.leetcode.subject.NodePreOrder;
 import club.neters.learn.leetcode.utils.NodeUtil;
@@ -28,8 +29,12 @@ public class HelloController {
 //        List<Integer> lists = LevelOrder.levelOrder2(TreeNodeUtil.arrayToTreeNode(arr));
 
         //: 589
-        Integer[] arr = {1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14};
-        List<Integer> lists = NodePreOrder.preorder(NodeUtil.arrayToNode(arr));
+//        Integer[] arr = {1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14};
+//        List<Integer> lists = NodePreOrder.preorder(NodeUtil.arrayToNode(arr));
+
+        //：2049
+        Integer[] arr = {-1,2,0,2,0};
+        int score = CountHighestScoreNodes.getScore(arr);
 
         return "hello from let code learn.";
     }
