@@ -3,6 +3,7 @@ package club.neters.learn.leetcode.controller;
 import club.neters.learn.leetcode.subject.CountHighestScoreNodes;
 import club.neters.learn.leetcode.subject.LevelOrder;
 import club.neters.learn.leetcode.subject.NodePreOrder;
+import club.neters.learn.leetcode.subject.RomanToInt;
 import club.neters.learn.leetcode.utils.NodeUtil;
 import club.neters.learn.leetcode.utils.TreeNodeUtil;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -33,9 +34,11 @@ public class HelloController {
 //        List<Integer> lists = NodePreOrder.preorder(NodeUtil.arrayToNode(arr));
 
         //：2049
-        Integer[] arr = {-1,2,0,2,0};
-        int score = CountHighestScoreNodes.getScore(arr);
+//        Integer[] arr = {-1,2,0,2,0};
+//        int score = CountHighestScoreNodes.getScore(arr);
 
+        //: 13
+        int mcmxciv = RomanToInt.getScore("MCMXCIV");
         return "hello from let code learn.";
     }
 }
