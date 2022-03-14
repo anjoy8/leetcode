@@ -1,9 +1,6 @@
 package club.neters.learn.leetcode.controller;
 
-import club.neters.learn.leetcode.subject.CountHighestScoreNodes;
-import club.neters.learn.leetcode.subject.LevelOrder;
-import club.neters.learn.leetcode.subject.NodePreOrder;
-import club.neters.learn.leetcode.subject.RomanToInt;
+import club.neters.learn.leetcode.subject.*;
 import club.neters.learn.leetcode.utils.NodeUtil;
 import club.neters.learn.leetcode.utils.TreeNodeUtil;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -38,7 +35,12 @@ public class HelloController {
 //        int score = CountHighestScoreNodes.getScore(arr);
 
         //: 13
-        int mcmxciv = RomanToInt.getScore("MCMXCIV");
+//        int mcmxciv = RomanToInt.getScore("MCMXCIV");
+
+        //: 599
+        String[] list1 = {"Shogun", "Tapioca Express", "Burger King", "KFC"};
+        String[] list2 = {"Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"};
+        String[] score = FindRestaurant.getScore(list1,list2);
         return "hello from let code learn.";
     }
 }
