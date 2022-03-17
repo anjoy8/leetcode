@@ -3,6 +3,10 @@ package club.neters.learn.leetcode.subject;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 算法：3
+ * 无重复字符的最长子串
+ */
 public class LengthOfLongestSubstring {
     public static void main(String[] args) {
         getScore("abcabcbb");
